@@ -1,0 +1,30 @@
+
+CREATE DATABASE ChloeBeaudreault;
+
+USE ChloeDatabase;
+
+CREATE TABLE ChloesResume (
+    Experience VARCHAR(50) PRIMARY KEY,
+    Achievement VARCHAR(100)
+);
+
+INSERT INTO ChloesResume (Experience, Achievement) VALUES
+('CDW', '200%+ quota attainment'),
+('OpenText', '707% YOY growth'),
+('Diagrid', 'Created sales function from the ground up for Dapr on Kubernetes tool'),
+('Coursera', 'Meta Certified in SQL 98% score'),
+('Coursera', 'Meta Certified in Python Programming 97.1% score'),
+('Coursera', 'AWS Certified in Containerized Apps perfect score'),
+('Udemy', 'Oracle SQL certified 99% score');
+
+CREATE TABLE ContactChloe (
+    Platform VARCHAR(20) PRIMARY KEY,
+    Info VARCHAR(100)
+);
+
+INSERT INTO ContactChloe (Platform, Info) VALUES
+('Phone', '(331) 444-9888'),
+('Email', 'chloe.bee.5683@gmail.com'),
+('GitHub', 'chloebeau'),
+('Twitter', 'cloudnativechlo'),
+('LinkedIn', 'https://www.linkedin.com/in/chloebeaudreault/');
